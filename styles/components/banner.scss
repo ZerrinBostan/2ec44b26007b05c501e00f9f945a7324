@@ -1,0 +1,23 @@
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #051937, #142650, #27346a, #3d4184, #564e9e);
+    position: relative;
+    
+    &-text {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+
+        h1 {
+            color: #ffffff;
+            text-shadow: 3px 2px 10px rgb(0 0 0 / 76%);
+            letter-spacing: 5px;
+            font-size: 40px;
+            line-height: 2;
+        }
+    }
+}

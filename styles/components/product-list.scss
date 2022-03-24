@@ -1,0 +1,54 @@
+.product-list {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    min-height: 600px;
+    left: 50%;
+    transform: translate(-50%, -2%);
+
+    @media only screen and (max-width: 767px) {
+        transform: translate(-50%, -1%);
+    }
+    
+    .card {
+        max-width: 300px;
+        box-shadow: rgb(0 0 0 / 15%) 0px 20px 33px;
+        &-desc {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+        }
+
+
+        &-footer {
+            h6 {
+                cursor: pointer;
+            }
+        }
+
+        &-img-top {
+           position: relative;
+        }
+
+        &-img-top-filter {
+           position: absolute;
+            width: 100%;
+            height: 250px;
+            opacity: 0.8;
+            background-image: linear-gradient(to right top, #051937, #172043, #23213e, #4d3e6a52, #4d3261);
+        }
+
+        &:hover {
+            transition: transform .2s;
+            height: 255px;
+            background-color: green;
+        }
+    }
+
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
